@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<metainfo>
+    <schemaVersion>2.0</schemaVersion>
+    <services>
+        <service>
+            <name>logstash</name>
+            <displayName>Logstash</displayName>
+            <comment>Logstash is a server-side data processing pipeline that ingests data from a multitude of sources simultaneously</comment>
+            <version>5.2.0</version>
+            <components>
+                <component>
+                    <name>LOGSTASH_MASTER</name>
+                    <displayName>Logstash</displayName>
+                    <category>MASTER</category>
+                    <cardinality>1</cardinality>
+                    <commandScript>
+                        <script>scripts/master.py</script>
+                        <scriptType>PYTHON</scriptType>
+                        <timeout>600</timeout>
+                    </commandScript>
+                </component>
+            </components>
+
+            <commandScript>
+                <script>scripts/service_check.py</script>
+                <scriptType>PYTHON</scriptType>
+                <timeout>300</timeout>
+            </commandScript>
+            <quickLinksConfigurations>
+                <quickLinksConfiguration>
+                    <fileName>quicklinks.json</fileName>
+                    <default>true</default>
+                </quickLinksConfiguration>
+            </quickLinksConfigurations>
+            <configuration-dependencies>
+                  <config-type>logstash-env</config-type>
+                  <config-type>logstash-site</config-type>
+            </configuration-dependencies>
+            <restartRequiredAfterChange>true</restartRequiredAfterChange>
+        </service>
+    </services>
+</metainfo>
