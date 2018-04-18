@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ambari-logstash.iml" filepath="$PROJECT_DIR$/.idea/ambari-logstash.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ES/.idea/ES.iml" filepath="$PROJECT_DIR$/../ES/.idea/ES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LOGSTASH.iml" filepath="$PROJECT_DIR$/.idea/LOGSTASH.iml" />
     </modules>
   </component>
 </project>
