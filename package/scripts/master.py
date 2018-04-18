@@ -41,7 +41,7 @@ class Logstash(Script):
         import params
         env.set_params(params)
         self.configure(env)
-        start_cmd = format("{work_dir}/logstash-5.2.0/bin/logstash -f {work_dir}/logstash-5.2.0/config/log-es.conf &")
+        start_cmd = format("{work_dir}/logstash-5.2.0/bin/logstash -f {work_dir}/logstash-5.2.0/config/log-es.conf --config.reload.automatic &")
         Execute(start_cmd,
                 logoutput=True,
                 environment={
