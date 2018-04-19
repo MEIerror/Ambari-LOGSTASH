@@ -9,5 +9,6 @@ from resource_management.libraries.script.script import Script
 from resource_management.libraries.functions import format
 config = Script.get_config()
 
-logstash_pid_dir = config['configurations']['logstash-site']['logstash_pid_dir']
-logstash_pid_file = format("{logstash_pid_dir}/logstash.pid")
+# logstash_pid_dir = config['configurations']['logstash-site']['logstash_pid_dir']
+# logstash_pid_file = format("{logstash_pid_dir}/logstash.pid")
+logstash_pid_file = '/var/run/logstash/logstash.pid'
