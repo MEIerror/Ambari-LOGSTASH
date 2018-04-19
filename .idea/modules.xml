@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../ES/.idea/ES.iml" filepath="$PROJECT_DIR$/../ES/.idea/ES.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IA/.idea/IA.iml" filepath="$PROJECT_DIR$/../IA/.idea/IA.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/LOGSTASH.iml" filepath="$PROJECT_DIR$/.idea/LOGSTASH.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../UAC/.idea/UAC.iml" filepath="$PROJECT_DIR$/../UAC/.idea/UAC.iml" />
     </modules>
   </component>
 </project>
